@@ -31,13 +31,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
+
+      - name: Setup Pages (ensure site is enabled)
         uses: actions/configure-pages@v4
+        with:
+          enablement: 'true'   # ensure the Pages site exists/enabled
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository content
+          # If your static files are in a build folder, replace '.' with that folder (e.g., 'build' or 'public')
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
