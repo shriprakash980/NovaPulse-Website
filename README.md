@@ -221,7 +221,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Shri Prakash**
+**Shriprakash Shukla**
 
 - GitHub: [@shriprakash980](https://github.com/shriprakash980)
 
